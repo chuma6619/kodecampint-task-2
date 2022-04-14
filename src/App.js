@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Redirectpage from './Components/Redirectpage';
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={window.location.pathname || ''>
         <div className="App">
           <Routes>
           <Route path="/" element={<Form />} />
